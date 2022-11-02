@@ -1,0 +1,7 @@
+Elements of a Java Application
+
+I understand that you are eager to type some code in your editor and run it to see your first Java application in action!
+Do not worry, your expectation will be fulfilled by the end of this tutorial.
+But before we move on, I would like to do through several elements that you need to know to fully understand what you are doing.
+
+Even if you are familiar with some other programming language, know about compilation, know what an executable file is you may be interested in the following because Java works in a way that differs from C or C++.

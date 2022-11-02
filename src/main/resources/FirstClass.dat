@@ -1,0 +1,13 @@
+Creating a First Java Class
+
+The first step you need to know is that the Java code you are writing is saved in plain text files.
+In this tutorial, your application will be written in a single text file.
+Larger applications may require thousands of such files.
+
+Java is an object-oriented language.
+If this technical term does not mean anything to you, do not worry, all you need to remember at this point is that all the code you write must be held in a Java class.
+
+A Java class is created by a special declaration in a text file.
+Just copy the following code and paste it in your text editor.
+Congratulation!
+You have created your first Java class!
