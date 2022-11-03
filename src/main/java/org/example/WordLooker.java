@@ -17,13 +17,18 @@ public class WordLooker implements Runnable {
         return resultText;
     }
 
+    /**
+    When program ask you to input the word, enter the next: lock.
+     The result.txt file will be empty.
+     Or you can input: tutorial. This word presents in few files.
+     */
     private String wordCreate() {
         System.out.print("Input the word that we will look for: ");
         Scanner scanner = new Scanner(System.in);
         return scanner.nextLine();
     }
 
-    // text was picked up here and putted info files - https://dev.java/learn/getting-started-with-java/
+    // text was picked up here - https://dev.java/learn/getting-started-with-java/
     // text was divided by parts and putted into few files
     private boolean fileContainsWord(File file, String word) throws IOException {
         return new String(Files.readAllBytes(Paths.get(file.getPath()))).contains(word);
@@ -53,6 +58,10 @@ public class WordLooker implements Runnable {
         }
     }
 
+    /**
+     Don't give your files the name results.txt! This consolidated file will have this name.
+     Accepted file for searching word may have extension *.txt, *.dat, *.dll.
+     */
     @Override
     public void run() {
         DirectoryCreate.directoryInstanceCreate();
@@ -77,7 +86,6 @@ public class WordLooker implements Runnable {
         System.out.println();
         System.out.println(flag ? "Content from files that contain your word was already copied!" :
                 "Nothing to copy. Word was not found.");
-        if(flag)
-            textCopy(file);
+        if(flag) textCopy(file);
     }
 }

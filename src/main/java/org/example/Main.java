@@ -9,7 +9,7 @@ public class Main {
         try {
             lookerThread.join();
         } catch (InterruptedException e) {
-            throw new RuntimeException(e);
+            throw new RuntimeException(lookerThread.getName() + " interrupted!");
         }
         WordsRemover wordsRemover = WordsRemover.wordsRemoverInstance();
         Thread removerThread = new Thread(wordsRemover);
@@ -17,7 +17,7 @@ public class Main {
         try {
             Thread.sleep(500);
         } catch (InterruptedException e) {
-            throw new RuntimeException(e);
+            throw new RuntimeException("Main thread can't sleep!");
         }
         showResult(wordsRemover);
     }

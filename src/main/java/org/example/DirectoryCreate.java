@@ -26,6 +26,12 @@ public class DirectoryCreate {
         return pathDir;
     }
 
+    /**
+     When program ask you to input the path to the directory, enter the next:
+     YourPath\LookMergeAndErase\src\main\resources
+     For example D:\Projects\Java\LookMergeAndErase\src\main\resources.
+     There is all needed resources for testing program.
+     */
     private static String pathToDir() {
         System.out.print("Enter the folder path: ");
         Scanner scanner = new Scanner(System.in);

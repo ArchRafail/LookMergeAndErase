@@ -23,6 +23,11 @@ public class WordsRemover implements Runnable {
         return wordsCollection;
     }
 
+    /**
+    Upon path YourPath\LookMergeAndErase\src\main\resources\bad_word.txt
+     you can specify words that will be removed from consolidated file.
+     They can be specified with spaces, dots, commas, tabs, line separator.
+     */
     public static WordsRemover wordsRemoverInstance() {
         Set<String> words = new HashSet<>();
         try (BufferedReader bufferedReader = new BufferedReader(new FileReader(DirectoryCreate.getPathDir() +
