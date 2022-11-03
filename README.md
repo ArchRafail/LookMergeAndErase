@@ -25,13 +25,16 @@ Program operating conditions.</br>
 </br>
 </br>
 Test of program.</br>
-1. Input incorrect absolut path. Example D:\Projects\Ja_va\LookMergeAndErase\src\main\resources.</br>
+1. Input incorrect absolut path. Example D:\Projects\Java\/LookMergeAndErase\src\main\resources.</br>
 Program will show you an error. Incorrect path.</br>
-2. Input correct absolut path YourPath\LookMergeAndErase\src\main\resources. Example D:\Projects\Java\LookMergeAndErase\src\main\resources.</br>
+2. Input incorrect absolut path.</br>
+Example D:\Projects\Java\LookMergeAndErase\src\main\resources\folder\ or even D:\Projects\Java\LookMergeAndErase\src\main\resources\sample.txt.</br>
+Program will show you an error. Directory not exist.</br>
+3. Input correct absolut path YourPath\LookMergeAndErase\src\main\resources. Example D:\Projects\Java\LookMergeAndErase\src\main\resources.</br>
 Program catch it. Path correct.</br>
-3. Enter search word - lock. None of the files contain this word.</br>
+4. Enter search word - lock. None of the files contain this word.</br>
 Program will show you the result, that result.txt is empty.</br>
-4. Enter search word - tutorial.</br>
+5. Enter search word - tutorial.</br>
 3 files from 5'th will consolidate into one file result.txt.</br>
 Program will show you the result before removing bad words and after removing bad words.</br>
 You can check file result.txt. It no contains bad words.
